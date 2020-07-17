@@ -18,6 +18,7 @@ border: 0;
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
+border: 2px solid red;
 }
 /*GENERAL STYLES*/
 html{
@@ -133,4 +134,32 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+/* Responsive Design Assignment for 500px*/
+
+@media (max-width: 500px)
+{
+.artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;   
+}
+.artist {
+    width: 100%;
+}
+.artist img{
+    width: 50%;
+    height: 5%;
+}
+.artist a {
+    font-size: 1.6rem;
+    width: 50%;
+}
+.artist .bio {
+    width: 60%;
+    justify-content: center;
+  
 }
