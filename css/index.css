@@ -140,6 +140,9 @@ button:hover{
 
 @media (max-width: 500px)
 {
+.header {
+    width: 50%;
+}
 .artists-container {
     display: flex;
     flex-direction: column;
