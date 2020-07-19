@@ -316,13 +316,17 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 console.log("*************************Task 7*************************");
 
-function lotsOfArt(/* Code here */){
-
-  /* Code here */
-
+function lotsOfArt(array){
+  let tons = [];
+    for (i = 0; i < array.length; i++){
+      if(array[i].paintings > 100){
+        tons.push(array[i].name);
+      }      
+    }
+      return tons;
 }
-
-
+ 
+console.log(lotsOfArt(artists));
 
 // 🎨🎨 STRETCH 🎨🎨//
 
