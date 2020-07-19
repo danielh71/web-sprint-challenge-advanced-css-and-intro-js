@@ -274,11 +274,13 @@ console.log(get20s(artists, "1900", "2000"));
 
 console.log("*************************Task 5*************************");
 
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(array, index) {
+    array.splice([index], 1);
+    return array.length;
   }
   
- 
+ console.log(removeArtist(artists, 0));
+//  console.log(artists);
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist 
@@ -296,11 +298,13 @@ At the end, this function should return the new array with information added"*/
 
 console.log("*************************Task 6*************************");
 
-function addArtist(/* Code here */){
+function addArtist(array, name, years, genre, nationality, bio){
 
-    /* Code here */
-
+    array.push({name, years, genre, nationality, bio});
+    return array;
   }
+
+  console.log(addArtist(artists, "Daniel", "1971 - Present", "Web Design", "Native American", "Attempting to tackle a new career and learn all I can about web development in order to be the best web developer I can be!"));
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
